@@ -1,4 +1,4 @@
-<?php
+<?php include("dbconnect.php"); ?>
 /**
  * The main template file
  *
@@ -10,10 +10,11 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Starter
- */
+**/
 
-get_header();
-?>
+<!--get_header();-->
+<?php include("inc_header.php");
+include("inc_nav.php"); ?>
 
 	<main id="primary" class="site-main">
 
@@ -39,6 +40,9 @@ get_header();
 				 */
 				get_template_part( 'template-parts/content', get_post_type() );
 
+//            the_title( '
+//. esc_url( get_permalink() ) . '" rel="bookmark">', '
+//' );
 			endwhile;
 
 			the_posts_navigation();
@@ -50,7 +54,7 @@ get_header();
 		endif;
 		?>
 
-	</main><!-- #main -->
+	</main><!-- #main -->/
 
 <?php
 get_sidebar();
