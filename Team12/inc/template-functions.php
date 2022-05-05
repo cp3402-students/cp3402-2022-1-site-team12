@@ -1,6 +1,6 @@
 <?php
 /**
- * Functions which enhance the theme by hooking into WordPress
+ * Functions which enhance the Team12 by hooking into WordPress
  *
  * @package Starter
  */

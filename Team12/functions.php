@@ -1,19 +1,19 @@
 <?php
 /**
- * Starter functions and definitions
+ * Team12 functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Starter
+ * @package starter
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
-	// Replace the version number of the theme on each release.
+	// Replace the version number of the Team12 on each release.
 	define( '_S_VERSION', '1.0.0' );
 }
 
 /**
- * Sets up theme defaults and registers support for various WordPress features.
+ * Sets up Team12 defaults and registers support for various WordPress features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which
  * runs before the init hook. The init hook is too late for some features, such
@@ -21,10 +21,10 @@ if ( ! defined( '_S_VERSION' ) ) {
  */
 function starter_setup() {
 	/*
-		* Make theme available for translation.
+		* Make Team12 available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on Starter, use a find and replace
-		* to change 'starter' to the name of your theme in all the template files.
+		* If you're building a Team12 based on Starter, use a find and replace
+		* to change 'starter' to the name of your Team12 in all the template files.
 		*/
 	load_theme_textdomain( 'starter', get_template_directory() . '/languages' );
 
@@ -33,7 +33,7 @@ function starter_setup() {
 
 	/*
 		* Let WordPress manage the document title.
-		* By adding theme support, we declare that this theme does not use a
+		* By adding Team12 support, we declare that this Team12 does not use a
 		* hard-coded <title> tag in the document head, and expect WordPress to
 		* provide it for us.
 		*/
@@ -46,7 +46,7 @@ function starter_setup() {
 		*/
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
+	// This Team12 uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'starter' ),
@@ -82,7 +82,7 @@ function starter_setup() {
 		)
 	);
 
-	// Add theme support for selective refresh for widgets.
+	// Add Team12 support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
 	/**
@@ -103,7 +103,7 @@ function starter_setup() {
 add_action( 'after_setup_theme', 'starter_setup' );
 
 /**
- * Set the content width in pixels, based on the theme's design and stylesheet.
+ * Set the content width in pixels, based on the Team12's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
  *
@@ -155,12 +155,12 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
- * Custom template tags for this theme.
+ * Custom template tags for this Team12.
  */
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
- * Functions which enhance the theme by hooking into WordPress.
+ * Functions which enhance the Team12 by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
 
@@ -175,4 +175,5 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
 

@@ -15,7 +15,7 @@
  * See: https://jetpack.com/support/content-options/
  */
 function starter_jetpack_setup() {
-	// Add theme support for Infinite Scroll.
+	// Add Team12 support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
@@ -25,10 +25,10 @@ function starter_jetpack_setup() {
 		)
 	);
 
-	// Add theme support for Responsive Videos.
+	// Add Team12 support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );
 
-	// Add theme support for Content Options.
+	// Add Team12 support for Content Options.
 	add_theme_support(
 		'jetpack-content-options',
 		array(
