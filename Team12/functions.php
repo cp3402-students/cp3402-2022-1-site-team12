@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package starter
+ * @package team12
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -19,14 +19,14 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function starter_setup() {
+function team12_setup() {
 	/*
 		* Make Team12 available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a Team12 based on Starter, use a find and replace
-		* to change 'starter' to the name of your Team12 in all the template files.
+		* If you're building a Team12 based on team12, use a find and replace
+		* to change 'team12' to the name of your Team12 in all the template files.
 		*/
-	load_theme_textdomain( 'starter', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'team12', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -49,7 +49,7 @@ function starter_setup() {
 	// This Team12 uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'starter' ),
+			'menu-1' => esc_html__( 'Primary', 'team12' ),
 		)
 	);
 
@@ -74,7 +74,7 @@ function starter_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'starter_custom_background_args',
+			'team12_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -100,7 +100,7 @@ function starter_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'starter_setup' );
+add_action( 'after_setup_theme', 'team12_setup' );
 
 /**
  * Set the content width in pixels, based on the Team12's design and stylesheet.
@@ -109,22 +109,22 @@ add_action( 'after_setup_theme', 'starter_setup' );
  *
  * @global int $content_width
  */
-function starter_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'starter_content_width', 640 );
+function team12_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'team12_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'starter_content_width', 0 );
+add_action( 'after_setup_theme', 'team12_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function starter_widgets_init() {
+function team12_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'starter' ),
+			'name'          => esc_html__( 'Sidebar', 'team12' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'starter' ),
+			'description'   => esc_html__( 'Add widgets here.', 'team12' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -132,23 +132,23 @@ function starter_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'starter_widgets_init' );
+add_action( 'widgets_init', 'team12_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function starter_scripts() {
-	wp_enqueue_style( 'starter-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'starter-style', 'rtl', 'replace' );
+function team12_scripts() {
+	wp_enqueue_style( 'team12-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'team12-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'starter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'team12-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
     wp_enqueue_style("bootstrap", "//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
 }
-add_action( 'wp_enqueue_scripts', 'starter_scripts' );
+add_action( 'wp_enqueue_scripts', 'team12_scripts' );
 
 /**
  * Implement the Custom Header feature.

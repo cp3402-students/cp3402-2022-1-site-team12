@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Starter
+ * @package team12
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function starter_jetpack_setup() {
+function team12_jetpack_setup() {
 	// Add Team12 support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'starter_infinite_scroll_render',
+			'render'    => 'team12_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function starter_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'starter-style',
+				'stylesheet' => 'team12-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,13 +48,13 @@ function starter_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'starter_jetpack_setup' );
+add_action( 'after_setup_theme', 'team12_jetpack_setup' );
 
-if ( ! function_exists( 'starter_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'team12_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function starter_infinite_scroll_render() {
+	function team12_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :
