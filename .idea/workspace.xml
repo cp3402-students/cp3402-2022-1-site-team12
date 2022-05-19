@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e145b0c-e271-41d9-a80b-ccf4424a670e" name="Default Changelist" comment="add 15% padding to header on all pages&#10;add 15% padding to content on all pages">
-      <change beforePath="$PROJECT_DIR$/Team12/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Team12/style.css" afterDir="false" />
+    <list default="true" id="1e145b0c-e271-41d9-a80b-ccf4424a670e" name="Default Changelist" comment="add 15% padding to header and content on all pages&#10;&#10;resize the site logo&#10;&#10;remove unnecessary bars in footer and header&#10;&#10;add padding to footer&#10;align text to center in footer&#10;change colour of footer to black">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team12/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Team12/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="add 15% padding to header and content on all pages&#10;&#10;resize the site logo&#10;&#10;remove unnecessary bars in footer and header&#10;&#10;add padding to footer&#10;align text to center in footer&#10;change colour of footer to black">
+      <created>1652937695190</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652937695190</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -29,5 +38,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add 15% padding to header and content on all pages&#10;&#10;resize the site logo&#10;&#10;remove unnecessary bars in footer and header&#10;&#10;add padding to footer&#10;align text to center in footer&#10;change colour of footer to black" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 15% padding to header and content on all pages&#10;&#10;resize the site logo&#10;&#10;remove unnecessary bars in footer and header&#10;&#10;add padding to footer&#10;align text to center in footer&#10;change colour of footer to black" />
   </component>
 </project>
