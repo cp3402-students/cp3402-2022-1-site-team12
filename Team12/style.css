@@ -974,7 +974,7 @@ textarea {
 	overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/* Style the links inside the heading nav bar */
 .site-header a {
 	float: left;
 	color: #f2f2f2;
@@ -988,4 +988,46 @@ textarea {
 .site-header a:hover {
 	background-color: #FFD700;
 	color: black;
+}
+
+/* Add padding to content on all pages */
+.entry-content {
+	padding-left:15%;
+	padding-right: 15%;
+}
+
+/*add padding to header */
+.entry-header{
+	padding-left:15%;
+	padding-right: 15%;
+}
+
+/* add styling to the widget-area (footer)*/
+.widget-area{
+	padding: 5px;
+	text-align: center;
+	color: #f2f2f2;
+	background-color: black;
+}
+
+/* remove the footer that is not used */
+.site-footer{
+	display: none;
+}
+
+/* size the site-logo */
+.custom-logo-link{
+	height: 5%;
+	width: 5%;
+	object-fit: contain;
+}
+
+/* remove unnecessary bar at top of header */
+.site-title{
+	display: none;
+}
+
+/* remove unnecessary bar at bottom of footer */
+.site-description{
+	display: none;
 }
