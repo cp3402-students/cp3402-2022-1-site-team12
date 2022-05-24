@@ -972,6 +972,8 @@ textarea {
 .site-header {
 	background-color: black;
 	overflow: hidden;
+	padding-left:15%;
+	padding-right: 15%;
 }
 
 /* Style the links inside the heading nav bar */
