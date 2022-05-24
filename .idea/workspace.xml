@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e145b0c-e271-41d9-a80b-ccf4424a670e" name="Default Changelist" comment="add css to site-header to center the top menu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/MDFiles/Theme.md" beforeDir="false" afterPath="$PROJECT_DIR$/theme/MDFiles/Theme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="29aglLoMRRQEQyihafvqdNs3yCU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -74,7 +75,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add 15% padding to header and content on all pages&#10;&#10;resize the site logo&#10;&#10;remove unnecessary bars in footer and header&#10;&#10;add padding to footer&#10;align text to center in footer&#10;change colour of footer to black" />
